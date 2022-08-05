@@ -1,4 +1,5 @@
 import EventComponent from './events/EventComponent';
+import UserSearchRef from './refs/UserSearchRef';
 import GuestList from './state/GuestList';
 import UserSearch from './state/UserSearch';
 
@@ -16,6 +17,7 @@ const root = ReactDOM.createRoot(el!);
 const App = () => {
 	return (
 		<div>
+			<UserSearchRef />	
 			<EventComponent />
 			<UserSearch />
 			<GuestList />
